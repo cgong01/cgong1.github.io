@@ -1,0 +1,281 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: 30px auto 0;
+}
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: clamp(20px, 5vw, 45px);
+  font-family: termina,sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.product-show {
+  padding: 50px 0px;
+  background-color: white;
+}
+
+.product-show-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flashlight {
+  margin: 0 3px;
+}
+
+.flashlight, .flashlight-img {
+  width: 80px;
+}
+
+.icon-font {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 10px;
+  font-family: termina,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.intro-cls {
+  font-family: termina,sans-serif;
+  font-style: normal;
+}
+
+.intro-desc, .intro-contact {
+  padding: 50px;
+}
+
+.desc-title, .contact-title {
+  font-size: clamp(13px, 2vw, 15px);
+  font-weight: 800;
+  text-align: center;
+  color: #D13233;
+}
+
+.desc-content, .address, .contact {
+  font-size: clamp(13px, 2vw, 15px);
+  margin: 20px 0;
+}
+
+.content-inner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo-name {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.dizhi-font {
+  color: #D13233;
+  font-size: clamp(13px, 2vw, 17px);
+  margin-top: 6px;
+  padding-left: 10px;
+}
+
+.newproduct-pic {
+  margin-top: 20px;
+}
+
+.newproduct-show {
+  padding: 50px 0;
+  background-color: white;
+}
+
+.newproduct-title {
+  font-size: clamp(14px, 2vw, 20px);
+  font-family: termina,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+}
+
+.light {
+  margin-bottom: 30px;
+}
+
+.light > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.light-desc-blk {
+  width: 50%;
+  margin: 10px auto;
+}
+
+.light-inner {
+  height: 150px;
+}
+
+.product-font {
+  font-size: clamp(12px, 2vw, 13px);
+  font-family: termina,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.knowmore {
+  padding: 8px 12px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.knowmore:hover {
+  color: #D13233;;
+  background-color: rgb(236, 233, 233);
+}
+
+button:focus { 
+  outline: none; 
+}
+
+/* tablet version */
+@media only screen and (min-width: 750px) {
+  .text {
+    top: 42%;
+  }
+
+  .product-show-inner {
+    width: 80%;
+    margin: 0 auto 0;
+    padding: 0 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flashlight, .flashlight-img {
+    width: 125px;
+  }
+
+  .flashlight {
+    margin: 0;
+  }
+
+  .icon-font {
+    font-size: 13px;
+  }
+
+  .intro-cls {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .intro-desc, .intro-contact {
+    width: 50%;
+  }
+
+  .desc-title, .contact-title, .desc-content, .address, .contact {
+    font-size: 17px;
+  }
+
+  .content-inner {
+    width: 35%;
+  }
+
+  .newproduct-pic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .product-font {
+    font-weight: 600;
+  }
+
+  .knowmore {
+    padding: 10px 20px;
+  }
+}
+
+
+/* tablet version */
+@media only screen and (min-width: 1000px) {
+  .text {
+    top: 45%;
+  }
+
+  .icon-font {
+    font-size: 14px;
+  }
+}
