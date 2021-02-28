@@ -1,0 +1,50 @@
+#footer {
+  margin: 40px auto;
+}
+
+.contact-info {
+  text-align: center;
+  font-size: 13px;
+  font-family: termina,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.contact-detail {
+  margin: 5px 0;
+}
+
+.footer-j-logo {
+  margin: 10px 0;
+}
+
+.footer-innner {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.footer-logo-img {
+  width: 35px;
+  margin-bottom: 20px;
+}
+
+/* tablet version */
+@media only screen and (min-width: 750px) {
+  #footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-info {
+    text-align: unset;
+    margin: 0 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  .footer-j-logo {
+    margin: 0 20px;
+  }
+}

@@ -1,0 +1,83 @@
+
+.job-content {
+  margin: 50px auto;
+  font-family: termina,sans-serif;
+  font-style: normal;
+}
+
+.zhaopin {
+  text-align: center;
+  color: #D13233;
+  font-size: clamp(16px, 2vw, 27px);
+  font-weight: 800;
+}
+
+.intro-contact {
+  margin: 50px auto 80px;
+  width: 30%;
+}
+
+.logo-name {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.dizhi-font {
+  color: #D13233;
+  font-size: clamp(12px, 2vw, 17px);
+  margin-top: 6px;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+.address {
+  margin: 30px 0 15px;
+}
+
+.contact {
+  margin: 15px 0 30px;
+}
+
+.job-req-title {
+  font-size: clamp(14px, 2vw, 24px);
+  text-align: center;
+  font-weight: 700;
+}
+
+.job-req-content {
+  width: 60%;
+  margin: 30px auto;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;;
+  padding: 30px 0;
+}
+
+.job-name {
+  font-size: clamp(14px, 2vw, 24px);
+  font-weight: 700;
+}
+
+.requirement {
+  font-size: clamp(13px, 2vw, 20px);
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.detail {
+  font-size: clamp(11px, 2vw, 17px);
+}
+
+/* tablet version */
+@media only screen and (min-width: 750px) {
+
+  .intro-contact {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .address, .contact {
+    margin: 0;
+  }
+
+}
